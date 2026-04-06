@@ -11,9 +11,15 @@ dicha configuracion Inicial.
 
 ## Prompt y respuesta
 
+### Prompt
+
 Estoy trabajando con un notebook con mxlinux y otro con windows 10, en windows uso visual studio code para escribir código, en linux por el momento uso nano, pero si corro en la terminal los codigos que creo. Entonces, necesito me ayudes a configurar mi cuenta de github en windows y visual studio code para poder crear mis proyectos de estudio, cargarlos en github y luego en linux poder configurar también para ir sincronizando el código en las carpetas locales y así poder correr y probar el código directo en la terminal de linux, y así de una vez, voy cargando mi github de código, así aprendo git, lo lleno y de pasada aumento mi portafolio, por ahora solo son códigos de prueba, para estudiar, de momento no tengo ningún proyecto principal, pero a futuro espero crear y respaldar proyectos de backend y frontend.
 Dame los pasos para configurar github en windows y linux y enséñame a mantener sincronizado mi código.
+
+### Respuesta DeepSeek
+
 Leer 10 páginas web
+
 ¡Perfecto! Me parece una excelente iniciativa. Pasar de usar nano a un flujo profesional con Git y GitHub es un gran paso, y hacerlo entre Windows y Linux te dará una base sólida para el futuro.
 
 Aquí tienes una guía paso a paso para configurar todo tu entorno y mantener tu código sincronizado entre ambos sistemas.
@@ -74,17 +80,17 @@ cd mi-primer-proyecto
 Conviértela en un repositorio de Git y súbela a GitHub en unos pocos comandos:
 
 bash
-# Inicializa el repositorio
+#### Inicializa el repositorio
 git init
 
-# Crea un archivo de ejemplo
+#### Crea un archivo de ejemplo
 echo "# Mi Proyecto de Estudio" > README.md
 
-# Prepara y guarda (commit) los cambios
+#### Prepara y guarda (commit) los cambios
 git add README.md
 git commit -m "Primer commit: agrego README"
 
-# Crea el repositorio en GitHub y sube el código
+#### Crea el repositorio en GitHub y sube el código
 gh repo create mi-primer-proyecto --public --source=. --remote=origin --push
 Explicación del último comando: Le dice a gh que cree un repo público llamado "mi-primer-proyecto", usando la carpeta actual (.) como fuente, que conecte el remoto (origin) y que lo suba (--push) .
 
@@ -135,19 +141,20 @@ Usas nano o tu editor favorito para crear o modificar código.
 Al terminar, guardas los cambios en el historial de Git local y los subes a GitHub:
 
 bash
-# 1. Ver qué ha cambiado (opcional)
+#### 1. Ver qué ha cambiado (opcional)
 git status
 
-# 2. Añadir los archivos que modificaste
+#### 2. Añadir los archivos que modificaste
 git add .  # El "." añade todos los archivos nuevos y modificados
 
-# 3. Crear un "commit" (una foto del estado actual)
+#### 3. Crear un "commit" (una foto del estado actual)
 git commit -m "Descripción clara de lo que cambié"
 
-# 4. Subir el commit a GitHub
+#### 4. Subir el commit a GitHub
 git push origin main
-# (Si tu rama se llama 'master', usa 'master' en lugar de 'main')
-Día 2: Continuas en Windows
+(Si tu rama se llama 'master', usa 'master' en lugar de 'main')
+
+ Día 2: Continuas en Windows
 
 Abres VS Code.
 
@@ -178,9 +185,16 @@ git checkout -b nueva-funcionalidad
 Trabajas ahí, haces commits, y cuando funciona perfecto, la mezclas con tu rama principal (main). Esto es el pan de cada día en cualquier trabajo .
 
 bash
-# Estando en la rama 'nueva-funcionalidad'
+#### Estando en la rama 'nueva-funcionalidad'
 git checkout main       # Volver a la rama principal
 git pull origin main    # Asegurarse de tener lo último
 git merge nueva-funcionalidad  # Mezclar los cambios
 git push origin main    # Subir la mezcla a GitHub
+
 Siguiendo esta guía, no solo estarás aprendiendo a programar, sino que estarás practicando el flujo de trabajo estándar de la industria. ¡Mucha suerte con tus estudios y tu portafolio!
+
+## Cierre
+
+Continuaré creando archivos para guardar las guias/tutoriales que voy considerando importantes para el desarrollo de esta ruta de aprendizaje.
+
+Ademas de ir creando un indice de creacion-lectura para futura referencia.
